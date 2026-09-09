@@ -1,0 +1,13 @@
+// Last updated: 9/9/2026, 4:19:56 PM
+class Solution {
+    public boolean canBeEqual(int[] target, int[] arr) {
+        Arrays.sort(target);
+        Arrays.sort(arr);
+        for(int i=0;i<arr.length;i++){
+            if(target[i]!=arr[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+}
